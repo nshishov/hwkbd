@@ -11,6 +11,7 @@ import sys
 # Imports
 from consts import *
 from qwerty_printed import *
+from qwerty_printed_ru import *
 from qwerty_fx import *
 from qwerty_shift_alias import *
 from qwerty_fn import *
@@ -45,6 +46,21 @@ GENERATED_LAYOUTS = [
         OUTPUT: "pro1_qwerty_scan_codes.kcm",
         REPLACE:    QWERTY_SCAN_CODES
     },
+	{
+        # Process our ЙЦУКЕН template
+        INPUT: "pro1_qwerty_scan_codes.kcm",
+        OUTPUT: "pro1_qwerty_ru_template.kcm",
+        IS_SOURCE_GENERATED: True,
+        REPLACE:    QWERTY_PRINTED_RU,
+    },
+    {
+        # Process our RU template 
+        # That's the basic RU layout
+        INPUT: "pro1_qwerty_ru_template.kcm",
+        OUTPUT: "pro1_qwerty_ru.kcm", 
+        IS_SOURCE_GENERATED: True,               
+        REPLACE: CLEANUP_TEMPLATE,  
+    },  
     {
         # Process our QWERTY template
         INPUT: "pro1_qwerty_scan_codes.kcm",
