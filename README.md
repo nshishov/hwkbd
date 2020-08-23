@@ -2,6 +2,7 @@
 
 Various keyboard layouts for your F(x)tec Pro1 physical keyboard:
 
+- F(x)tec Pro1 Qwerty - RU
 - F(x)tec Pro1 Qwerty - US
 - F(x)tec Pro1 Qwerty - US - Fn+Tab
 - F(x)tec Pro1 Qwerty - US - Shift as Fn
